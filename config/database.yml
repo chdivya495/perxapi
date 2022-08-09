@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: perx_dev
+  username: postgres
+  password: postgres
+  host: localhost
+
+development:
+  <<: *default
+test:
+  <<: *default
+production:
+  <<: *default
